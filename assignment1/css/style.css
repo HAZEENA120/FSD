@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:300,400,700&display=swap');
+
+:root{
+    --yellow:#f9ca24;
+}
+
+*{
+    font-family: 'montserrat', sans-serif;
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;    
+}
+
+*::selection{
+    background: var(--yellow);
+    color: #333;
+}
+
+html{
+    font-size: 63;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: 1.5em;
+}
+
+html::-webkit-scrollbar-track{
+    background: #222;
+}
+
+html::-webkit-scrollbar-track{
+    background:var(--yellow);
+}
+
+body{
+    background:#111;
+    overflow-x: hidden;
+    padding: 35rem;
+}
+
+header{
+    position: fixed;
+    top:0;left:0;
+    z-index: 1000;
+    height: 100%;width: 35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .user img{
+    height:17rem;width:17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border:.7rem solid var(--yellow);
+    margin-top: 3%;
+}
+
+header .navbar{
+    width:100%
+}
+
+header .navbar ul{
+    list-style: none;
+    padding: 1rem 3rem;
+}
+
+header .navbar ul li a{
+    display: block;
+    margin:1.5rem 0;padding:1rem;
+    background:#333;
+    color:#fff;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+header .navbar ul li a:hover{
+    background:var(--yellow);
+}
+
+section{
+   
+   height: 0rem;
+    top: 0;
+    right: 0;
+}
+
+.home{
+    display: flex;
+    height: 10em;
+    flex-flow: column;
+    padding:0 15rem ;
+    color: #fff;
+    text-align: top;
+    width: 1000px;
+    justify-content:center;
+    
+}  
+    
+.home h1{
+    font-size: 2rem;
+    
+}
+
+.home h2{
+    font-size: 1.5rem;
+}
+
+.home h4{
+    font-size: 1.3rem;
+}
+
+.home P{
+    font-size: 1.orem;
+    padding: 1rem 0;
+}
+
+.heading{
+    text-align: center;
+    margin: 0 6rem;padding: 1rem;
+    font-size: 4rem;
+    color: #fff;
+    border-bottom: 1rem solid #fff4;
+    width: 1000px;
+}
+
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;   
+}
+
+.about .row .info{
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+    color: var(--yellow);
+    line-height: 1.5;
+}
+
+.about .row .info .h3{
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-weight: normal;
+   
+}
+
+.about .row .info .h3 span{
+    padding: 0 .5rem;
+    color: #eee;
+}
+/*about me ends*/
+
+/* Skills */
+.skill{
+    margin-top: 21%;
+    color: black;
+    background-color:var(--yellow);
+    border: 1px solid white;
+    margin-bottom: 2%;
+    width: 1000px;
+}
+.grid-items {
+    font-size: 20px;
+    
+}
+
+.skill h1{  
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline; 
+    color:black;
+    background-color:var(--yellow);  
+}
+.skill-list{
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto ;
+    padding: 10px;
+    display: grid;
+}
+
+.skill-list li{ 
+    margin-top: 10%;
+    list-style:square;
+    font-size: 20px;
+    width: 85%;
+    line-height: 25px;
+    
+}
+.list-box{
+    float: left;
+    margin-right: 8%;
+   
+}
+.project h3{
+    margin-top: 2%;
+    margin-left: 35%;
+    text-decoration: underline;
+    font-size: 30px;
+    margin-bottom: 3%;
+    
+}
+.project{
+    margin-left: 35%;
+    width: 70%;
+    
+    
+}
+.project li{
+   
+    margin-left: 0; 
+    padding-right: 5%;
+    padding-left:0;
+    line-height: 25px;
+    font-size: 18px;
+    
+}
+
+/* Education */
+
+.education-data{
+
+    color:var(--yellow);
+    margin-top: 5%;
+    padding-bottom: 2%;
+    width:1000px;
+    margin-top: 600px;
+    
+  
+}
+.education-data h1{
+    text-decoration: underline;
+}
+.education-data h1{
+    text-align: center;
+    font-size: 40px;
+
+    
+}
+.education-details{
+  
+    width: 55%;
+    padding-left: 10px;
+    margin-left: 20%; 
+    line-height: 25px;
+    color: black;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+  .grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto ;
+    padding: 10px;
+    display: grid;
+    font-size: 25px;
+    background-color: var(--yellow);
+    border: 1px solid white;
+  }
+  
+  
+  .grid-item {
+   
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .grid-item li{
+    list-style: none;
+    text-align: justify;
+    padding-left: 25%;
+  }
+  .grid-item h3{
+    text-align: right;
+  }
+
+     /* contact */
+  .contacts{
+
+    color:var(--yellow);
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 275%;
+    font-size: 25px;
+    width: 1000px;
+  }
+  .information{
+    border: 2px solid white;
+    background-color:var(--yellow);
+    width: 50%;
+    height: 30em;
+    align-self: center;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    margin-top: 0;
+    margin-left:25% ;
+    margin-top: 60px;
+    margin-right: 10px;
+    padding-top: 5%;
+    width: 700px;
+
+  }
+  .information input{
+    height: 2em;
+    width: 50%;
+    background-color: black;
+    color: white;
+  }
+  .information textarea{
+    height: 7em;
+    width: 40%;
+    color: white;
+    background-color: black;
+  }
+  .message-data{
+    padding-right: 25px;
+    width: 80%;
+  
+ 
+  }
+  .contact-data button{
+    width: 10%;
+    height: 2.5em;
+    color: white;
+    background-color:aliceblue;
+    border: none;
+    background-color: black;
+  }
+
+   /* footer */
+  
+   .accounts a{
+    text-align: right;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding-right: 3%;
+    padding-left: 3%;
+    border-left: 1px solid black;
+
+   }
+   .accounts a:first-child{
+    border-left: none;
+   }
+   footer{
+    background-color:var(--yellow);
+    color:black;
+    height: 3.5em;
+    margin:0;
+    text-align: center;
+    border: 1px solid white;
+    width: 750px;
+    margin-top: 175%;
+   }
+
+    /* media queries */
+
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+.home{
+    padding:1rem 4rem;
+}
+@media (max-width:991px){
+    header{
+        left: 120%;
+    }
+}
+#menu{
+    display: block;
+}
+
+header.toggle{
+    left:0%
+}
+body{
+    padding:0;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
